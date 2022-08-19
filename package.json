@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "name": "streamgenie-backend",
+  "description": "A backend for the client [StreamGenie](https://github.com/Rando-cal/streamgenie-frontend) that handles fetching data from the third-party API [TMDb](https://developers.themoviedb.org/3/getting-started/introduction) to populate user searches and favorite list.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christian-the-brewer/streamgenie-backend.git"
+  },
+  "author": "Christian Brewer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/christian-the-brewer/streamgenie-backend/issues"
+  },
+  "homepage": "https://github.com/christian-the-brewer/streamgenie-backend#readme"
+}
