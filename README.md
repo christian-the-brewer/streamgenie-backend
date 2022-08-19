@@ -1,4 +1,12 @@
-Descrip
+## About
+
+    A backend for the client [StreamGenie](https://github.com/Rando-cal/streamgenie-frontend) that handles fetching data from the third-party API [TMDb](https://developers.themoviedb.org/3/getting-started/introduction) to populate user searches and favorite list.
+
+## API
+ 
+[The Movie Database](https://api.themoviedb.org/3)
+
+## Installation
 
 ## Backend
 
@@ -27,3 +35,23 @@ Descrip
 ## Roles
 Randy D'Abbraccio - Frontend & Manager |
 Christian Brewer - Backend API
+
+## Routes
+
+### Authentication
+
+| Verb   | URI Pattern            | Controller#Action |
+|--------|------------------------|-------------------|
+| POST   | `/sign-up`             | `users#signup`    |
+| POST   | `/sign-in`             | `users#signin`    |
+| PATCH  | `/change-password/` | `users#changepw`  |
+| DELETE | `/sign-out/`        | `users#signout`   |
+| POST   | `/favorites`  | `favoritesList#create`  |
+| PATCH  | `/favorites/:id` | `favoritesList#update`  |
+| GET   | `/favorites`  | `get#favoritesList`  |
+
+### Content
+| GET   | `/content`  | `get#content`  | this route will fetch data from the third-party API and send the JSON data to the front-end
+
+
+
